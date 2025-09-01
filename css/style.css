@@ -66,7 +66,7 @@ input {
   box-shadow: none !important;
   border: 1px solid #aaa;
 }
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: block;
   }
@@ -93,10 +93,11 @@ input {
     white-space: normal; 
   }
   
-  
   td:before { 
     font-weight: bold; 
     margin-right: 20px; 
+    display: inline-block;
+    width: 80px; /* Optional: Adjust width for better alignment */
   }
   
   td:nth-child(1):before { content: "ID:"; }
@@ -105,6 +106,17 @@ input {
   td:nth-child(4):before { content: "Price:"; }
   td:nth-child(5):before { content: "Description:"; }
 
+
+  td:nth-child(6):before { 
+    content: "Edit:"; 
+    display: inline-block;
+    width: auto;
+  }
+  td:nth-child(7):before { 
+    content: "Delete:"; 
+    display: inline-block;
+    width: auto;
+  }
 
   td:nth-child(6),
   td:nth-child(7) {
@@ -115,5 +127,4 @@ input {
     padding: 5px 0;
     margin: 0;
   }
-
-} */
+}
