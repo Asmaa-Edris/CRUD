@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+}
+label {
+  color: #290b47;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btnSav,
+.btnUpdate {
+  background: linear-gradient(135deg, #4edac1, #93a3eb);
+  color: white;
+  border-radius: 30px;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
+}
+.btnSav:hover,
+.btnUpdate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+thead {
+  background: linear-gradient(90deg, #1f2127, #412063);
+  color: #fff;
+}
+
+.search-box {
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background: rgb(85, 1, 1);
+  border: none;
+  outline: none;
+}
+.btn2:hover {
+  background: rgb(4, 64, 38);
+  border: none;
+  outline: none;
+}
+input {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 1px solid #aaa;
+}
+@media screen and (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  thead {
+    display: none; 
+  }
+
+  tr {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+    position: relative;
+    text-align: left;
+    white-space: normal; 
+  }
+  
+  
+  td:before { 
+    font-weight: bold; 
+    margin-right: 20px; 
+  }
+  
+  td:nth-child(1):before { content: "ID:"; }
+  td:nth-child(2):before { content: "Name:"; }
+  td:nth-child(3):before { content: "Category:"; }
+  td:nth-child(4):before { content: "Price:"; }
+  td:nth-child(5):before { content: "Description:"; }
+
+
+  td:nth-child(6),
+  td:nth-child(7) {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+    border-bottom: none;
+    padding: 5px 0;
+    margin: 0;
+  }
+}
