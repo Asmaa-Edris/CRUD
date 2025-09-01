@@ -97,7 +97,7 @@ input {
     font-weight: bold; 
     margin-right: 20px; 
     display: inline-block;
-    width: 80px; /* Optional: Adjust width for better alignment */
+    width: 100px; 
   }
   
   td:nth-child(1):before { content: "ID:"; }
@@ -106,25 +106,24 @@ input {
   td:nth-child(4):before { content: "Price:"; }
   td:nth-child(5):before { content: "Description:"; }
 
-
+  /* Add the "Edit" and "Delete" labels before the buttons */
   td:nth-child(6):before { 
     content: "Edit:"; 
-    display: inline-block;
-    width: auto;
+
+   
   }
   td:nth-child(7):before { 
     content: "Delete:"; 
-    display: inline-block;
-    width: auto;
+  ;
   }
 
   td:nth-child(6),
   td:nth-child(7) {
-    display: inline-block;
-    width: 49%;
-    text-align: center;
+    display: flex;
+    width: 100%;
+justify-content: space-between;
     border-bottom: none;
-    padding: 5px 0;
-    margin: 0;
+    padding: 5px ;
+  
   }
 }
