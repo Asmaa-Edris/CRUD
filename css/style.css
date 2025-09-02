@@ -70,7 +70,6 @@ input {
   table, thead, tbody, th, td, tr {
     display: block;
   }
-  
   thead {
     display: none; 
   }
@@ -127,6 +126,7 @@ justify-content: space-between;
   
   }
 }
+
 
 
 
