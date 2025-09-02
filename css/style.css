@@ -66,7 +66,7 @@ input {
   box-shadow: none !important;
   border: 1px solid #aaa;
 }
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   table, thead, tbody, th, td, tr {
     display: block;
   }
@@ -127,4 +127,5 @@ justify-content: space-between;
   
   }
 }
-*/
+
+
